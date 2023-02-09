@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+}
+
+.body {
+    background-color: rgb(246, 245, 247);
+}
+
+.wrapper .sidebar {
+    background:  #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease
+}
+
+.wrapper .sidebar .profile {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    background-color: ;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.wrapper .sidebar h3 {
+    color: gray;
+    margin: 10px 0 5px;
+}
+
+.wrapper .sidebar p {
+    color: gray;
+    font-size: 14px;
+}
+
+.wrapper .sidebar ul li a {
+    color: gray;
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+}
+
+.wrapper .sidebar ul li a .icon {
+    color: grey;
+    width: 30px;
+    display: inline-block;
+}
+
+/* link hover */
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+     color: #0c7db1; 
+    background: rgb(5, 68, 104);
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon {
+    color: black;
+}
+
+.wrapper .sidebar ul li a:hover::before,
+.wrapper .sidebar ul li a.active::before {
+    display: block;
+}
+
+/* top navbar */
+.wrapper .section {
+    width: calc(100% -225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.wrapper .section .top-navbar {
+    background-color: #ffffff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+}
+
+.wrapper .section .top-navbar .hamburger {
+    font-size: 18px;
+    color:black ;
+}
+
+.wrapper .section .top-navbar .hamburger a i{
+    color:grey;
+}
+
+.wrapper .section .top-navbar .hamburger a:hover {
+    color: grey;
+}
+
+body.active .wrapper .sidebar {
+    left: -225px;
+}
+
+body.active .wrapper .section {
+    margin-left: 0;
+    width: 100%;
+}
+
+/* main section */
+.container {
+    
+}
+
+.wallet {
+    display: flex;
+    flex-direction: row;
+}
+
+.wallet div{
+    padding: 10px;
+}
+
+.deposit {
+    margin-left: 13.5rem;
+}
+
+@media (max-width: 370px) {
+    .deposit {
+        margin-left: 8rem;
+    }
+}
+
+#balance{
+    font-size: 0.625rem;
+}
+
+#deposit{
+    font-size: 0.625rem;
+}
+
+#signal {
+    font-size: 0.625rem;
+    margin-top: 5px;
+}
+
+.section-one i{
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+.progress {
+    
+}
+
+.account{
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.expert{
+    padding: 15px;
+    border-radius: 10px;
+    background: rgb(231, 152, 4);
+    margin-left: 2rem ;
+}
+
+.market {
+    padding: 15px;
+    border-radius: 10px;
+    background: rgb(105, 190, 105);
+}
+
+.assets{
+    padding: 15px;
+    border-radius: 10px;
+    background: rgb(231, 152, 4);
+    margin-left: 2rem ;
+}
+
+.binary{
+    padding: 15px;
+    border-radius: 10px;
+    background: rgb(80, 15, 124);
+    margin-left: 2rem ;
+}
+
+/* Section Two */
+
+.section-two a {
+    text-decoration: none;
+    color: grey;
+}
+
+.section-two span {
+    font-size: 12px;
+    
+}
+
+.section-two span:active{
+    font-weight: 700;
+    color: #10558d;
+}
+
+.section-two .closed-wrapper .active-wrapper a:active{
+    font-weight: 700;
+    color: #10558d;
+}
+
+.closed-wrapper {
+    padding: 10px;
+    
+}
+
+.active-wrapper {
+    padding: 10px; 
+    
+}
+
+.closed-wrapper:active {
+    border-bottom: 2px solid #000;
+    background: grey;
+}
+
+.active-wrapper:active{
+    border-bottom: 2px solid #000;
+    background: grey;
+}
+
+.data {
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.data:hover{
+    background: skyblue;
+    cursor: pointer;
+}
+
+.data p{
+    font-size: 10px;
+    font-weight: 700;
+    color: grey;
+}
