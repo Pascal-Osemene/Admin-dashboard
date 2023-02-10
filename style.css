@@ -123,6 +123,24 @@ body.active .wrapper .section {
     width: 100%;
 }
 
+.top-navbar span h3{
+    margin-left: 25px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.left-navbar-items {
+    position: absolute;
+    right: 40px;
+}
+
+.left-navbar-items a i{
+    color: #000;
+}
+
+
+
 /* main section */
 .container {
     
@@ -238,22 +256,40 @@ body.active .wrapper .section {
     background: grey;
 }
 
-.active-wrapper:active{
+.closed-wrapper:hover{
+    cursor: pointer;
     border-bottom: 2px solid #000;
-    background: grey;
+    background: #f3e7e7;
+    color: #000;
+    font-weight: 700;
 }
 
-.data {
+.active-wrapper:hover{
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    background: #f3e7e7;
+    color: #000;
+    font-weight: 700;
+}
+
+.active-wrapper:active{
+    border-bottom: 2px solid #000;
+    background: #f3e7e7;
+}
+
+
+.data-wrapper {
     border-radius: 10px;
     padding: 30px;
 }
 
-.data:hover{
-    background: skyblue;
+.data-wrapper:hover{
+    background-color: rgb(146, 217, 245);
     cursor: pointer;
+    color: #000;
 }
 
-.data p{
+.data-wrapper p{
     font-size: 10px;
     font-weight: 700;
     color: grey;
